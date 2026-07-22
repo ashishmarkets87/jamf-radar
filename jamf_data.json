@@ -1,0 +1,428 @@
+{
+  "lastUpdated": "2026-07-22T03:20:50Z",
+  "news": [
+    {
+      "id": "18",
+      "category": "Release",
+      "title": "Jamf Pro 11.30.0 released with Last Contact inventory field and passkey sign-in",
+      "date": "2026-07-14",
+      "source": "Jamf Support Portal",
+      "url": "https://support.jamf.com/en/articles/15934810-jamf-pro-11-30-0-release",
+      "summary": "Jamf Pro 11.30.0 adds a Last Contact inventory attribute for computers and mobile devices (usable in smart groups/advanced searches), passkey sign-in for Jamf ID, and updated Microsoft Entra ID connection permissions that use narrower Graph API scopes. Also improves SSO setup with Entra ID consent flow for multi-tenant apps.",
+      "tags": ["release", "jamf-pro", "entra-id", "passkey", "inventory"]
+    },
+    {
+      "id": "17",
+      "category": "Troubleshooting",
+      "title": "Jamf Pro 11.29.2 maintenance release fixes smart group performance bug (PI-1431)",
+      "date": "2026-07-02",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/release-announcements-177/jamf-pro-11-29-2-now-available-58545",
+      "summary": "A maintenance release resolving PI-1431, where advanced searches and smart group calculations using User Group or Mobile Device Group criteria could cause severe performance degradation. Admins on 11.29.x using those criteria types should update.",
+      "tags": ["release", "bugfix", "smart-groups", "performance"]
+    },
+    {
+      "id": "16",
+      "category": "Security",
+      "title": "Jamf Mobile Forensics now detects sophisticated mobile spyware in minutes",
+      "date": "2026-07-07",
+      "source": "Jamf Blog",
+      "url": "https://www.jamf.com/blog/",
+      "summary": "Jamf's Mobile Forensics capability can now identify advanced spyware on mobile devices quickly, giving security teams a full incident timeline without needing to physically surrender or image the device. Aimed at incident responders investigating targeted mobile threats.",
+      "tags": ["security", "mobile", "forensics", "spyware"]
+    },
+    {
+      "id": "15",
+      "category": "AI Governance",
+      "title": "Jamf launches AI Governance, a native AI control plane for Mac (GA)",
+      "date": "2026-06-30",
+      "source": "Jamf Blog / 9to5Mac",
+      "url": "https://www.jamf.com/resources/press-releases/jamf-launches-ai-governance-a-first-of-its-kind-native-ai-control-plane-for-mac/",
+      "summary": "Jamf AI Governance is now generally available, letting IT/security teams discover which AI tools are actually in use on managed Macs, enforce endpoint-level policy controls, and generate audit-ready reports. Jamf is positioning this as the first native, OS-level AI governance offering for Mac.",
+      "tags": ["ai-governance", "security", "mac", "compliance", "release"]
+    },
+    {
+      "id": "14",
+      "category": "Events",
+      "title": "Jamf Nation Live 2026 hit London (Jun 16) and Berlin (Jun 23) with AI Governance and DDM focus",
+      "date": "2026-06-23",
+      "source": "Jamf Blog",
+      "url": "https://www.jamf.com/blog/jamf-nation-live-2026-london-berlin/",
+      "summary": "Jamf's European roadshow stopped in London (The Brewery, June 16) and Berlin (June 23), with sessions centered on AI Governance and Declarative Device Management (Blueprints). Good source for admins wanting session recaps and slide decks on where Jamf's DDM roadmap is headed.",
+      "tags": ["events", "jamf-nation-live", "ddm", "ai-governance"]
+    },
+    {
+      "id": "13",
+      "category": "Events",
+      "title": "JNUC 2026 moves to Kansas City, Sept 23–25; session catalog now live",
+      "date": "2026-06-10",
+      "source": "Jamf Blog",
+      "url": "https://www.jamf.com/events/jamf-nation-user-conference/2026/overview/",
+      "summary": "The 17th annual Jamf Nation User Conference runs September 23–25, 2026 at the Kansas City Convention Center. The session catalog is now published — worth browsing early since popular hands-on labs and certification sessions tend to fill up.",
+      "tags": ["events", "jnuc", "kansas-city", "conference"]
+    },
+    {
+      "id": "12",
+      "category": "Troubleshooting",
+      "title": "Jamf Trust 11.47.0+ can lose connectivity on iOS/iPadOS 26.1 with On-Device Content Filter",
+      "date": "2026-06-01",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/from-jamf-179/jamf-trust-app-updates-on-ios-ipados-26-1-connectivity-issue-57586",
+      "summary": "Devices on iOS/iPadOS 26.1 running Jamf Trust with On-Device Content Filter can lose network connectivity when updating to Jamf Trust 11.47.0+ on unstable networks. Apple fixed the underlying root cause in iOS/iPadOS 26.2 (Dec 12, 2025) — update the OS before updating Jamf Trust, or ensure devices are on stable Wi-Fi during the update, and test in a pilot group first.",
+      "tags": ["jamf-trust", "ios", "connectivity", "known-issue"]
+    },
+    {
+      "id": "11",
+      "category": "Deep Dive",
+      "title": "Understanding Jamf Pro Blueprints: when and how to use DDM-powered device management",
+      "date": "2026-05-20",
+      "source": "MacJediWizard Blog",
+      "url": "https://macjediwizard.blog/understanding-jamf-pro-blueprints-when-and-how-to-use-ddm-powered-device-management/",
+      "summary": "A practical walkthrough of Jamf Pro Blueprints, Jamf's declarative device management (DDM) delivery mechanism that's replacing traditional MDM commands as Apple deprecates legacy push-command workflows in 2026. Good primer for admins migrating existing policies/profiles to blueprint-based compliance benchmarks.",
+      "tags": ["ddm", "blueprints", "deep-dive", "migration"]
+    },
+    {
+      "id": "10",
+      "category": "Security",
+      "title": "Jamf 2026 Security 360 Report: 53% of orgs have critically out-of-date OS devices",
+      "date": "2026-05-12",
+      "source": "Jamf Blog / AP News",
+      "url": "https://www.jamf.com/blog/",
+      "summary": "Jamf's annual Security 360 Report found 53% of organizations had devices with critically out-of-date operating systems, 95% of assessed apps had at least one medium-severity vulnerability, and 44% of Mac devices saw malicious network traffic (26% hit by cryptojacking). Trojans, infostealers, and adware made up 90% of Mac malware attacks in 2025 — useful ammunition for patch-compliance conversations with leadership.",
+      "tags": ["security", "report", "malware", "patch-compliance"]
+    },
+    {
+      "id": "9",
+      "category": "Release",
+      "title": "Jamf Pro 11.26.1 brings AI Assistant to General Availability, patches two CVEs",
+      "date": "2026-04-08",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/release-announcements-177/jamf-pro-11-26-1-now-available-58000",
+      "summary": "Jamf Pro 11.26.1 fixed CVE-2026-25639 and CVE-2026-1605 in third-party libraries, resolved a Recovery Lock password sync issue between Jamf Pro and Macs, and moved Jamf AI Assistant (conversational device management/security helper) to GA. Prioritize this update for the CVE fixes alone.",
+      "tags": ["release", "cve", "security-patch", "ai-assistant", "recovery-lock"]
+    },
+    {
+      "id": "8",
+      "category": "Troubleshooting",
+      "title": "Jamf Pro 11.25.1 fixed JCDS cloud distribution 401 errors from expiring download tokens",
+      "date": "2026-03-15",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/release-announcements-177/jamf-pro-11-25-1-now-available-57811",
+      "summary": "Before this fix, Jamf Pro could intermittently invalidate active JCDS (Jamf Cloud Distribution Service) download tokens, breaking cloud package downloads with 401 errors until a fresh token was generated. If policies were silently failing to install packages, this was a likely culprit.",
+      "tags": ["jcds", "cloud-distribution", "bugfix", "packages"]
+    },
+    {
+      "id": "7",
+      "category": "Release",
+      "title": "Jamf Connect 3.6.0 adds macOS Platform SSO awareness to authchanger",
+      "date": "2026-02-02",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/release-announcements-177/jamf-connect-3-6-0-now-available-57537",
+      "summary": "Jamf Connect 3.6.0 adds Dutch language support to the login window, and — notably — the authchanger CLI tool now recognizes Microsoft's macOS Platform Single Sign-On, so admins can safely run 'authchanger -reset' without breaking Platform SSO deployments. Also trims unused menu items (About removed, Quit/Preferences on by default).",
+      "tags": ["jamf-connect", "release", "platform-sso", "authchanger"]
+    },
+    {
+      "id": "6",
+      "category": "Troubleshooting",
+      "title": "Community thread: FileVault recovery keys rotating and failing to escrow on macOS Sequoia",
+      "date": "2026-01-20",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/general-discussions-2/macos-sequoia-filevault-disk-encryption-updated-and-now-invalid-in-jamf-34291",
+      "summary": "On some macOS Sequoia machines, FileVault personal recovery keys rotate and the new key fails to escrow to Jamf Pro, leaving the console showing an invalid/stale key. Workaround discussed in the thread: exempt the device from the FileVault configuration profile, reboot, re-target the profile, reboot again, and confirm via 'fdesetup status' that the new key escrows correctly.",
+      "tags": ["filevault", "encryption", "sequoia", "recovery-key"]
+    },
+    {
+      "id": "5",
+      "category": "Tips & Tricks",
+      "title": "Community how-to: fixing PreStage Enrollment packages that silently fail to install",
+      "date": "2025-12-11",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/general-discussions-2/prestage-enrollment-packages-not-getting-installed-57487",
+      "summary": "When packages assigned in a PreStage Enrollment fail to install (usually a network-timing race during Setup Assistant), the recommended workaround is to create a fallback policy scoped to the 'enrollmentComplete' trigger so the package installs right after enrollment finishes rather than during it.",
+      "tags": ["prestage", "enrollment", "packages", "workaround"]
+    },
+    {
+      "id": "4",
+      "category": "Troubleshooting",
+      "title": "Community thread: diagnosing SSO enrollment blank-screen failures via debug logs",
+      "date": "2025-11-18",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/general-discussions-2/jamf-enrollment-issue-57592",
+      "summary": "For SSO enrollment blank-screen failures, the thread walks through enabling Jamf Pro server debug logging and searching for AuthenticationServiceException, CredentialsExpiredException, or SAMLException entries — these usually point directly at an expired IdP certificate or a misconfigured assertion consumer URL.",
+      "tags": ["sso", "enrollment", "debug-logs", "saml"]
+    },
+    {
+      "id": "3",
+      "category": "Community",
+      "title": "Community thread: Jamf Connect Keychain entries breaking after 3.5 upgrade",
+      "date": "2025-10-30",
+      "source": "Jamf Community",
+      "url": "https://community.jamf.com/general-discussions-2/jamf-connect-keychain-issue-after-jc-3-5-57843",
+      "summary": "Several admins reported Keychain issues after upgrading to Jamf Connect 3.5+. The most reliable fix reported in-thread: uninstall both Jamf Connect and Self Service+ to fully remove their Keychain entries, then reinstall clean rather than upgrading in place.",
+      "tags": ["jamf-connect", "keychain", "upgrade-issue"]
+    },
+    {
+      "id": "2",
+      "category": "Deep Dive",
+      "title": "Declarative Device Management vs traditional MDM: what changes and what to do about it",
+      "date": "2025-09-05",
+      "source": "MacJediWizard Blog",
+      "url": "https://macjediwizard.blog/declarative-device-management-vs-traditional-mdm-what-changes-and-what-you-do-about-it/",
+      "summary": "Explains why Apple's 2026 deprecation of traditional MDM software-update push commands forces admins onto DDM-based workflows (Jamf Blueprints), what breaks in existing configuration profiles/policies, and a practical migration checklist for teams still relying on legacy MDM commands.",
+      "tags": ["ddm", "mdm", "migration", "deep-dive"]
+    },
+    {
+      "id": "1",
+      "category": "Release",
+      "title": "Jamf announces same-day support for macOS Tahoe 26, iOS 26, and other OS 26 releases",
+      "date": "2025-09-15",
+      "source": "Jamf Press Release",
+      "url": "https://finviz.com/news/166556/jamf-announces-same-day-support-for-macos-tahoe-26-ios-26-and-other-os-26-releases",
+      "summary": "Jamf confirmed day-one management and deployment support for macOS Tahoe 26, iOS 26, iPadOS 26, and related Apple OS releases across Jamf Pro, Jamf School, and Jamf Connect — meaning admins can allow these OS versions in update policies without waiting on a Jamf-side compatibility patch.",
+      "tags": ["release", "os-support", "tahoe", "ios-26"]
+    }
+  ],
+  "kb": [
+    {
+      "id": "kb1",
+      "category": "Connectivity",
+      "title": "Mac won't connect to Wi-Fi (but other devices work fine)",
+      "difficulty": "Easy",
+      "appliesTo": "Both",
+      "symptom": "Wi-Fi shows connected or won't join a network at all, while phones/other laptops on the same network work normally.",
+      "causes": ["Corrupt Wi-Fi/network preference files", "Stale DHCP lease or router-side issue", "VPN or content-filter extension interfering", "Outdated macOS with a known Wi-Fi bug"],
+      "solution": [
+        "Check the Wi-Fi menu bar icon for Apple's built-in 'Wi-Fi Recommendations' — it often names the exact problem.",
+        "Toggle Wi-Fi off/on and confirm the Mac is within range and not in Airplane-adjacent power states.",
+        "Power-cycle the router/modem/hub: unplug for 60 seconds, plug back in, wait for full boot.",
+        "If a VPN is installed, disconnect it and retest — VPNs are the most common software cause of intermittent Mac connectivity issues.",
+        "Check System Settings > General > Software Update — Apple has shipped point releases (e.g. macOS 26.4.1) specifically to fix Wi-Fi bugs on newer Mac models.",
+        "As a last resort, remove and re-add the network: System Settings > Wi-Fi > Details > Forget This Network, then rejoin and re-enter the password."
+      ],
+      "source": "Apple Support",
+      "url": "https://support.apple.com/guide/mac-help/if-you-cant-connect-to-a-wi-fi-network-on-mac-mchlp1185/mac",
+      "tags": ["wifi", "connectivity", "networking"]
+    },
+    {
+      "id": "kb2",
+      "category": "Hardware & Boot",
+      "title": "Mac experiencing kernel panics / random restarts",
+      "difficulty": "Medium",
+      "appliesTo": "Both",
+      "symptom": "Mac shows a 'your computer restarted because of a problem' message, or reboots unexpectedly during use.",
+      "causes": ["Third-party kernel extension conflict", "Faulty peripheral or USB/Thunderbolt device", "Low free disk space (below ~10%)", "Underlying hardware fault (RAM, storage, logic board)"],
+      "solution": [
+        "Open /Library/Logs/DiagnosticReports and read the most recent panic log to identify the process or kext named at the top of the report.",
+        "Disconnect all third-party peripherals, reboot, and see if panics stop — reconnect one at a time to isolate the culprit.",
+        "Boot into Safe Mode (hold Shift at startup on Intel; press and hold power on Apple Silicon until 'Loading startup options') to rule out third-party login items and force a cache rebuild.",
+        "Confirm free disk space is well above 10-15% of capacity; low space can trigger memory-allocation panics.",
+        "Update macOS fully — Apple frequently patches kernel-level stability bugs in point releases.",
+        "Reset NVRAM/SMC if panics correlate with sleep/wake or power events.",
+        "If panics persist after all software steps, treat it as likely hardware (RAM/logic board) and contact Apple Support or an authorized repair provider."
+      ],
+      "source": "MacPaw / Apple Community",
+      "url": "https://macpaw.com/how-to/fix-kernel-panic-on-macos",
+      "tags": ["kernel-panic", "crash", "reboot", "hardware"]
+    },
+    {
+      "id": "kb3",
+      "category": "Updates",
+      "title": "macOS update stuck or fails to install",
+      "difficulty": "Easy",
+      "appliesTo": "Both",
+      "symptom": "Software Update progress bar freezes for a long time, or the installer errors out and reboots to the same version.",
+      "causes": ["Insufficient free disk space (need ~25GB+ for major upgrades)", "Interrupted/unstable internet during download", "Corrupted update package or startup disk state"],
+      "solution": [
+        "Let it sit for at least 30-60 minutes on a stalled progress bar before intervening — some stages genuinely take a long time.",
+        "If truly frozen, force restart, then go back to System Settings > General > Software Update and retry.",
+        "Verify at least 25GB free on the startup disk before retrying.",
+        "Try installing in Safe Mode, which resets caches and skips third-party login items that can block installers.",
+        "If it still fails, boot into Recovery (hold Command+R at startup, or hold power on Apple Silicon), and choose 'Reinstall macOS' — this refreshes the system without erasing user data.",
+        "Repeated failures after a clean reinstall attempt point to a failing startup disk — back up immediately and contact Apple Support."
+      ],
+      "source": "Macworld / MacPaw",
+      "url": "https://www.macworld.com/article/671831/macos-wont-install-fixes.html",
+      "tags": ["software-update", "installer", "recovery-mode"]
+    },
+    {
+      "id": "kb4",
+      "category": "Storage",
+      "title": "Mac storage shows huge 'Other' or 'System Data' category",
+      "difficulty": "Medium",
+      "appliesTo": "Both",
+      "symptom": "About This Mac > Storage shows a large 'Other' or 'System Data' slice with no clear explanation of what's using the space.",
+      "causes": ["Accumulated app caches and logs", "Time Machine local snapshots retained on disk", "Leftover installer files (.dmg/.pkg) and uninstalled-app remnants"],
+      "solution": [
+        "Open Storage Management (Apple menu > About This Mac > Storage > Manage) to see Apple's built-in breakdown and recommendations.",
+        "Clear old caches in ~/Library/Caches for apps you no longer use — avoid clearing caches for apps you use daily unless troubleshooting.",
+        "Check for Time Machine local snapshots: tmutil listlocalsnapshots / in Terminal, or via Storage Management's Time Machine section, and thin them if excessive.",
+        "Delete leftover installer disk images and old .pkg files from Downloads.",
+        "Enable 'Empty Trash Automatically' (30 days) and move unused large files to iCloud/external storage.",
+        "Avoid unfamiliar third-party 'cleaner' apps that request broad system access — Apple's own Storage Management covers the safe portion of this cleanup."
+      ],
+      "source": "MacPaw / Setapp",
+      "url": "https://macpaw.com/how-to/clean-up-other-storage-on-mac",
+      "tags": ["storage", "other-storage", "disk-space", "cleanup"]
+    },
+    {
+      "id": "kb5",
+      "category": "Enterprise / MDM",
+      "title": "FileVault won't enable, or recovery key fails to escrow to Jamf",
+      "difficulty": "Advanced",
+      "appliesTo": "Managed (Jamf/MDM) devices",
+      "symptom": "FileVault configuration profile is deployed but encryption never starts, or Jamf Pro shows an invalid/missing personal recovery key despite the disk showing as encrypted.",
+      "causes": ["User account lacks a SecureToken (no bootstrap token available)", "FileVault enablement attempted via Jamf Connect instead of a config profile", "Profile applied during PreStage before the user has a SecureToken", "macOS Sequoia recovery-key rotation not escrowing back to Jamf"],
+      "solution": [
+        "Run 'fdesetup status' in Terminal — the CLI output usually states the exact reason enablement is blocked.",
+        "Confirm the logged-in user has a SecureToken: 'sysadminctl -secureTokenStatus <username>'. If missing, a bootstrap token from the MDM is required, or an admin with a token must grant one.",
+        "Enable FileVault via a Configuration Profile from Jamf Pro (Disk Encryption payload) rather than through Jamf Connect directly — mixing the two causes known conflicts.",
+        "If deployed at PreStage before a SecureToken exists, exempt the device from the profile, let the user log in normally once (granting the token), reboot, then re-target the profile.",
+        "For Sequoia machines showing an invalid recovery key: exempt the device, reboot, re-apply the profile, reboot again, and verify the new key escrows via fdesetup or the Jamf Pro device record.",
+        "Cross-check the device record in Jamf Pro under Management > FileVault to confirm the newly escrowed key matches what fdesetup reports locally."
+      ],
+      "source": "Jamf Docs / Jamf Community",
+      "url": "https://docs.jamf.com/technical-papers/jamf-pro/administering-filevault-macos/10.30.0/Deploying_the_Disk_Encryption_Configuration.html",
+      "tags": ["filevault", "encryption", "jamf-pro", "securetoken", "mdm"]
+    },
+    {
+      "id": "kb6",
+      "category": "Performance",
+      "title": "Mac is slow with frequent spinning beach ball",
+      "difficulty": "Easy",
+      "appliesTo": "Both",
+      "symptom": "Cursor frequently shows the spinning wait indicator and apps take a long time to respond, especially after startup or during heavy multitasking.",
+      "causes": ["A runaway process consuming CPU/memory", "Corrupted disk directory or low free space", "Too many login items / background agents", "Insufficient RAM for current workload (common below 8GB)"],
+      "solution": [
+        "Open Activity Monitor (Spotlight > 'Activity Monitor') and sort by %CPU and Memory to find the runaway process; quit it if it's not essential.",
+        "Run Disk Utility > First Aid on the startup volume to catch directory corruption.",
+        "Review Login Items in System Settings > General > Login Items and disable anything unnecessary.",
+        "Boot into Safe Mode once to clear system caches and rule out a bad login item or kext.",
+        "Confirm free disk space is above roughly 15-20% — a nearly-full disk noticeably slows macOS.",
+        "If the Mac has 8GB RAM or less and regularly runs modern browsers/Electron apps, treat the slowdown as a memory-pressure issue — closing tabs/apps or upgrading hardware are the real fixes, not just cache-clearing."
+      ],
+      "source": "Apple Community / MacPaw",
+      "url": "https://discussions.apple.com/thread/251328021",
+      "tags": ["performance", "beach-ball", "slow", "activity-monitor"]
+    },
+    {
+      "id": "kb7",
+      "category": "Backup",
+      "title": "Time Machine backup fails or won't complete",
+      "difficulty": "Easy",
+      "appliesTo": "Both",
+      "symptom": "Time Machine reports 'backup failed', 'couldn't complete the backup', or the disk shows as read-only.",
+      "causes": ["Backup disk too full or too small relative to source data", "Third-party antivirus scanning/locking the backup disk", "Backup disk formatted as FAT/NTFS instead of APFS/Mac OS Extended", "Corrupted backup disk file system"],
+      "solution": [
+        "Check free space on the backup disk — Apple recommends it be roughly 2x+ the size of the data being backed up.",
+        "Exclude the Time Machine backup volume from any third-party antivirus/security scanning.",
+        "Verify the disk's format in Disk Utility; reformat to APFS or Mac OS Extended (Journaled) if it's FAT32/exFAT/NTFS (this erases the disk, so back up first).",
+        "Run Disk Utility > First Aid on the backup disk to check for and repair file-system errors.",
+        "If it still fails, restart the Mac to clear stuck backup processes and network/connection state, then retry.",
+        "For persistent failures on network backup targets (NAS/Time Capsule), verify the share is still mounted and reachable, and consider starting a fresh backup set if the sparsebundle is corrupted."
+      ],
+      "source": "Apple Support",
+      "url": "https://support.apple.com/guide/mac-help/if-a-time-machine-backup-fails-mchlb955003d/mac",
+      "tags": ["time-machine", "backup", "disk-utility"]
+    },
+    {
+      "id": "kb8",
+      "category": "Battery",
+      "title": "MacBook battery draining faster than expected",
+      "difficulty": "Easy",
+      "appliesTo": "MacBook (battery models)",
+      "symptom": "Battery percentage drops noticeably faster than normal, including while the lid is closed or the Mac is idle.",
+      "causes": ["Background app(s) with a high 'Energy Impact' score", "Non-native (Intel/Rosetta) app running on Apple Silicon", "Browser tabs running video/animation/JS in the background", "Power Nap or background sync activity while asleep"],
+      "solution": [
+        "Open Activity Monitor > Energy tab and sort by Energy Impact to find the top offenders; quit or update anything unusually high.",
+        "For Apple Silicon Macs, check whether heavy apps have a native (Apple Silicon) build available instead of running under Rosetta — native builds use significantly less power.",
+        "Review browser tabs for video/audio/animation running in the background; Safari generally manages this better than Chromium-based browsers on macOS.",
+        "Check System Settings > Battery for Power Nap and background app refresh settings if drain happens mostly during sleep.",
+        "Fully update macOS — Apple regularly ships battery-related bug fixes in point releases.",
+        "As an Apple Silicon equivalent to an SMC reset, do a full shutdown, wait 30 seconds, then power back on."
+      ],
+      "source": "How-To Geek / MacPaw",
+      "url": "https://www.howtogeek.com/870008/why-is-my-mac-battery-draining-so-fast-10-fixes/",
+      "tags": ["battery", "power", "energy-impact", "apple-silicon"]
+    },
+    {
+      "id": "kb9",
+      "category": "Display",
+      "title": "External display or USB-C/Thunderbolt dock monitor not detected",
+      "difficulty": "Medium",
+      "appliesTo": "Both",
+      "symptom": "Connecting an external monitor directly or via a dock results in no signal, or the display isn't listed in System Settings > Displays.",
+      "causes": ["Passive USB-C cable that doesn't carry video signal", "Dock needs a firmware update or power cycle", "DisplayLink-based dock missing Screen Recording permission", "Stale display-detection state on the Mac"],
+      "solution": [
+        "Unplug and reseat both ends of the cable (Mac-to-dock and dock-to-display), then fully restart the Mac.",
+        "Confirm the cable actually supports video — not all USB-C cables carry a display signal; use a cable rated for DisplayPort/Thunderbolt video.",
+        "If using a dock with DisplayPort output, verify it's an active DisplayPort cable, since some docks fail silently with passive cables.",
+        "Power-cycle the dock itself and check the manufacturer's site for a macOS firmware updater.",
+        "For DisplayLink-based docks, open System Settings > Privacy & Security > Screen Recording and confirm the DisplayLink Manager app is permitted.",
+        "With the Mac's lid open, check Apple menu > System Settings > Displays and use 'Detect Displays' (hold Option while in the Displays pane if it's not visible)."
+      ],
+      "source": "MacPaw / Plugable KB",
+      "url": "https://macpaw.com/how-to/macbook-not-detecting-external-display",
+      "tags": ["display", "usb-c", "thunderbolt", "dock", "monitor"]
+    },
+    {
+      "id": "kb10",
+      "category": "Enterprise / MDM",
+      "title": "Automated Device Enrollment (ADE) fails or device won't pick up its enrollment profile",
+      "difficulty": "Advanced",
+      "appliesTo": "Managed (Jamf/MDM) devices",
+      "symptom": "Device gets stuck on 'Remote Management' / 'Retrieving enrollment profile' during Setup Assistant, or shows 'Configuration failed' / no profile assigned in Jamf Pro.",
+      "causes": ["No PreStage/ADE profile assigned to the device's serial number", "Expired MDM push certificate or expired ADE (Apple Business/School Manager) token", "Enrollment restricted to specific regions and misconfigured", "Device already set up, so ADE won't retrigger without an erase"],
+      "solution": [
+        "In Jamf Pro, check Devices > Automated Device Enrollment (or PreStage Enrollments) to confirm the serial number shows 'Profile Assigned'/'Profile Pushed'; assign a PreStage if missing.",
+        "Verify the ADE (ABM/ASM) token in Jamf Pro Global Management settings hasn't expired — renew and re-download if needed.",
+        "Confirm the MDM Push (APNs) certificate is current under Global Management > PKI Certificates; an expired push cert silently breaks MDM commands including enrollment.",
+        "Check Enrollment settings for region restrictions — 'Allow enrollment only from specific regions' misconfigured without valid entries produces a 'Configuration failed' error.",
+        "For a device that's already completed Setup Assistant, the only way to re-trigger ADE is to fully erase it (Erase All Content and Settings or wipe via MDM) and go through Setup Assistant again.",
+        "Pull Jamf Pro server logs during a failed attempt and search for the device's serial number to see the exact API/MDM error returned."
+      ],
+      "source": "Jamf Support Portal",
+      "url": "https://support.jamf.com/en/articles/11695672-troubleshooting-automated-device-enrollment",
+      "tags": ["ade", "prestage", "enrollment", "jamf-pro", "mdm"]
+    },
+    {
+      "id": "kb11",
+      "category": "Input Devices",
+      "title": "MacBook keyboard or trackpad stops responding",
+      "difficulty": "Easy",
+      "appliesTo": "MacBook (battery models)",
+      "symptom": "Built-in keyboard and/or trackpad becomes unresponsive, either intermittently or entirely, sometimes only after login.",
+      "causes": ["Very low battery charge", "Accessibility/input settings accidentally disabled", "Stuck NVRAM/SMC state", "Software conflict from a third-party input-related login item"],
+      "solution": [
+        "Connect power and confirm the battery isn't critically low — this alone causes input to stop responding on some models.",
+        "Force a restart: hold Control + Command + Power (or Touch ID/power button on newer models) until it reboots.",
+        "Check System Settings > Keyboard and System Settings > Trackpad to confirm neither is disabled.",
+        "Reset NVRAM/PRAM (Intel: Command+Option+P+R at startup until second chime) or, on Apple Silicon, a full shutdown and restart serves the equivalent purpose.",
+        "Boot into Safe Mode to see if input works normally there — if so, a third-party login item or driver is the likely cause; remove recently installed input-related software.",
+        "If input fails to work even in Safe Mode or right after a clean boot, treat it as a hardware issue and book an Apple Support/authorized repair appointment."
+      ],
+      "source": "MacPaw / Apple Community",
+      "url": "https://macpaw.com/how-to/keyboard-trackpad-not-working",
+      "tags": ["keyboard", "trackpad", "input", "hardware"]
+    },
+    {
+      "id": "kb12",
+      "category": "Peripherals",
+      "title": "Mac won't print or 'printer not responding' errors",
+      "difficulty": "Easy",
+      "appliesTo": "Both",
+      "symptom": "Print jobs stall in the queue, the printer shows as offline, or macOS reports it can't communicate with the printer.",
+      "causes": ["Printer and Mac on different networks/Wi-Fi bands", "Outdated or corrupted print driver", "Stuck print queue or corrupted printing subsystem"],
+      "solution": [
+        "Confirm the printer is powered on and confirm it's on the same Wi-Fi network as the Mac (including same band if the router splits 2.4/5GHz into separate SSIDs).",
+        "Restart the printer and the Mac — resolves a large share of 'not responding' errors.",
+        "Remove the printer from System Settings > Printers & Scanners and re-add it, letting macOS fetch current drivers automatically.",
+        "Check for and install printer firmware/driver updates from the manufacturer's site.",
+        "If queue jobs are stuck, open the print queue, clear all pending jobs, and try a fresh print.",
+        "As a last resort, right-click (or Control-click) in the Printers & Scanners list and choose 'Reset printing system', then re-add the printer — this clears deep configuration corruption."
+      ],
+      "source": "Apple Support",
+      "url": "https://support.apple.com/guide/mac-help/solve-printing-problems-on-mac-mh14002/mac",
+      "tags": ["printer", "printing", "peripherals"]
+    }
+  ]
+}
