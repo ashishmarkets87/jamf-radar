@@ -42,52 +42,66 @@
     gap: 14px;
   }
   .header-icon {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     flex-shrink: 0;
-    border-radius: 12px;
+    border-radius: 13px;
     background: var(--grad);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.01em;
     box-shadow: 0 6px 20px rgba(111,107,240,0.4);
   }
   header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 800;
     letter-spacing: -0.02em;
-    background: var(--grad);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    color: var(--text);
   }
   header .sub {
     color: var(--text-dim);
-    font-size: 13px;
+    font-size: 13.5px;
     margin-top: 4px;
   }
-  .last-updated {
+  .status-banner-wrap {
+    padding: 0 32px 20px;
+    background:
+      radial-gradient(600px 200px at 10% -80%, rgba(111,107,240,0.14), transparent 70%),
+      radial-gradient(500px 180px at 90% -100%, rgba(79,140,255,0.10), transparent 70%);
+  }
+  .status-banner {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-dim);
+    flex-direction: column;
+    gap: 6px;
     background: var(--card);
     border: 1px solid var(--card-border);
-    padding: 8px 14px;
-    border-radius: 999px;
+    border-radius: 12px;
+    padding: 16px 20px;
   }
-  .last-updated .dot {
-    width: 7px;
-    height: 7px;
+  .status-top {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .status-top .dot {
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: #34d399;
     box-shadow: 0 0 8px 1px rgba(52,211,153,0.7);
     flex-shrink: 0;
+  }
+  .status-sub {
+    font-size: 13.5px;
+    color: var(--text-dim);
   }
   nav.tabs {
     display: flex;
@@ -361,14 +375,20 @@
 
 <header>
   <div class="header-left">
-    <div class="header-icon">🛰️</div>
+    <div class="header-icon">JR</div>
     <div>
       <h1>Jamf Radar</h1>
-      <div class="sub">Jamf news &amp; Mac Fix-It knowledge base, for IT support building toward Jamf admin</div>
+      <div class="sub">Jamf intelligence &amp; a Mac fix-it knowledge base, in one place</div>
     </div>
   </div>
-  <div class="last-updated"><span class="dot"></span><span id="lastUpdated">Loading…</span></div>
 </header>
+
+<div class="status-banner-wrap">
+  <div class="status-banner">
+    <div class="status-top"><span class="dot"></span><span>Updated <span id="lastUpdated">Loading…</span></span></div>
+    <div class="status-sub">Auto-refreshed daily from Jamf Support, Jamf Blog, Jamf Community, Apple Support &amp; trusted admin sources.</div>
+  </div>
+</div>
 
 <nav class="tabs">
   <button class="tab-btn active" data-tab="news">🛰️ Jamf Radar</button>
@@ -1049,13 +1069,23 @@
   const news = (data.news || []).slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   const kb = data.kb || [];
 
+  function relTime(iso) {
+    try {
+      const then = new Date(iso);
+      const now = new Date();
+      const diffDays = Math.floor((now - then) / 86400000);
+      if (diffDays <= 0) return 'today';
+      if (diffDays === 1) return '1 day ago';
+      return diffDays + ' days ago';
+    } catch (e) { return ''; }
+  }
   function fmtDate(iso) {
     try {
       const d = new Date(iso);
-      return d.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+      return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
     } catch (e) { return iso; }
   }
-  document.getElementById('lastUpdated').textContent = 'Last updated: ' + fmtDate(data.lastUpdated);
+  document.getElementById('lastUpdated').textContent = relTime(data.lastUpdated) + ' · ' + fmtDate(data.lastUpdated);
 
   function badgeClass(cat) {
     return 'badge badge-' + String(cat).replace(/[^A-Za-z]/g, '');
